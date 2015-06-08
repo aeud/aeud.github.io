@@ -6,16 +6,22 @@ $grey: #999;
 $white: #fff;
 $blue: /*#0d47a1*/#3366FF;
 $darkblue: #123C7C;
+$socialgrey: #BDBDBD;
 
 body {
+    height: 100%;
     color: $black;
     font-weight: 300;
 }
 header.page-header {
     border-top: solid 5px $blue;
 }
+.blue {
+    backgound-color: $blue;
+}
 #home section {
     margin: 20px 0;
+    padding: 0 30px 20px;
 }
 #home h2 {
     font-size: 24px;
@@ -25,11 +31,12 @@ header.page-header {
 }
 #home p {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
 }
 #home p a {
     color: $blue;
     font-weight: 400;
+    transition: all 0.2s ease;
 }
 #home p a:hover {
     text-decoration: underline;
@@ -45,11 +52,16 @@ header.page-header {
     color: $black;
     padding: 20px 10px 30px 10px;
     border-left: solid 5px $blue;
+    transition: all 0.2s ease;
+}
+#home ul li a.card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #home ul li a.card .post-date {
     position: absolute;
     right: 10px;
     bottom: 10px;
+    font-size: 13px;
 }
 #curtain {
     background-color: $blue;
@@ -76,7 +88,7 @@ header.page-header {
     display: none;
 }
 #curtain.start {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -124,6 +136,30 @@ header.page-header {
     text-align: right;
     color: $grey;
     font-style: italic;
+}
+footer {
+    margin: 50px 0 0 0;
+}
+footer ul {
+    text-align: center;
+}
+footer ul li {
+    display: inline;
+    padding: 0 30px 0 10px;
+}
+footer ul li a {
+    font-size: 35px;
+    color: $socialgrey;
+    transition: color 0.5s ease;
+}
+footer ul li a:hover {
+    color: $blue;
+}
+footer .copyright {
+    font-size: 12px;
+    color: $socialgrey;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .highlight  { background: #ffffff; }

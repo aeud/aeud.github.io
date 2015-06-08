@@ -8,11 +8,13 @@
             strings: ['Hi, I\'m Adrien!'],
             typeSpeed: 100,
             callback: function(){
-                console.log('test');
                 $('#curtain').animate({
                     'height': '300'
                 }, 1000).removeClass('start');
             }
         });
+    });
+    $(document).ready(function(){
+        $('.tooltipped').tooltip();
     });
 </script>
