@@ -3,16 +3,18 @@
 <script src="{{ "/js/typed.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
     $(function(){
-        $('#curtain').addClass('start');
-        $('#curtain h1#typed').typed({
-            strings: [$('#curtain h1').first().html()],
-            typeSpeed: 100,
-            callback: function(){
-                $('#curtain').animate({
-                    'height': '300'
-                }, 1000).removeClass('start');
-            }
-        });
+        if (!/eudes\.co|localhost/.test(document.referrer)) {
+            $('#curtain').addClass('start');
+            $('#curtain h1#typed').typed({
+                strings: [$('#curtain h1').first().html()],
+                typeSpeed: 100,
+                callback: function(){
+                    $('#curtain').animate({
+                        'height': '300'
+                    }, 1000).removeClass('start');
+                }
+            });
+        };
     });
     $(document).ready(function(){
         $('.tooltipped').tooltip();
