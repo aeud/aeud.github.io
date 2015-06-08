@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div id="home">
+    <div id="curtain" class="valign-wrapper z-depth-1">
+        <div id=linkedin>
+            <a href="https://sg.linkedin.com/in/aeudes"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+        <h1 class="valign center-align">Hi, I'm Adrien!</h1>
+        <h1 class="valign center-align" id="typed"></h1>
+    </div>
+    <div class="container">
+        <section>
+            <h2>About me</h2>
+            <p>
+                I'm a <b>French engineer & entrepreneur</b>. Since 8, I'm passionated by Maths and its applications. I love finding solutions to elegantly solve complexe problems with Technology & Science.
+            </p>
+            <p>
+                I've been graduated by <a href="">l'Ècole Centrale de Lille, France</a> (French Engineer Grande École) in 2013 after a specialization in <b>eCommerce and Organisations Management</b>. During my student years, I've been <b>freelancer</b>, helping companies to create their digital branding.
+            </p>
+            <p>
+                In 2012, during an internship in Singapore, I've tech-founded <a href="http://www.villa-bali.com/">Villa-Bali.com</a>, an online plateform to rent villas in Bali. I've been <b>CTO</b> at <a href="http://www.villa-finder.com/">Villa-Finder</a> for 3 years: mother company of Villa-Bali.com, we created after having launched our new destinations: Phuket & Samui in Thailand and Sri Lanka.
+            </p>
+            <p>
+                After an internship at <a href="http://www.3suisses.fr/">3Suisses</a> in 2013, one of the most important eCommerce in France, I realized how powerful is Data Analysis. I'm now <b>Head of Data Science</b> at <a href="http://www.luxola.com/">Luxola</a>, #1 APAC beauty eCommerce, using all my experience in sciences, maths, programming & business to help taking strategic decisions.
+            </p>
+        </section>
+        <section>
+            <h2>Last articles</h2>
+            <ul class="posts row">
+                {% for post in site.posts %}
+                <li class="col m4">
+                    <a class="post-link card" href="{{ post.url | prepend: site.baseurl }}">
+                      <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+                      <div class="title">{{ post.title }}</div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</div>
