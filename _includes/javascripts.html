@@ -5,7 +5,7 @@
     $(function(){
         $('#curtain').addClass('start');
         $('#curtain h1#typed').typed({
-            strings: ['Hi, I\'m Adrien!'],
+            strings: [$('#curtain h1').first().html()],
             typeSpeed: 100,
             callback: function(){
                 $('#curtain').animate({
