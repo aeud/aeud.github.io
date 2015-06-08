@@ -74,18 +74,6 @@ header.page-header {
     z-index: 1000;
     position: relative;
 }
-#curtain #linkedin {
-    position: absolute;
-    top: 0;
-    right: 18px;
-    font-size: 30px;
-}
-#curtain #linkedin a {
-    color: $darkblue
-}
-#curtain.start #linkedin {
-    display: none;
-}
 #curtain h1 {
     display: block;
 }
@@ -159,6 +147,34 @@ footer ul li a {
 }
 footer ul li a:hover {
     color: $blue;
+}
+footer .copyright {
+    font-size: 12px;
+    color: $socialgrey;
+    text-align: center;
+    margin: 10px 0;
+}
+ul#social {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#curtain.start ul#social {
+    display: none;
+}
+ul#social li {
+    display: inline;
+    padding: 0 30px 0 10px;
+}
+ul#social li a {
+    font-size: 30px;
+    color: $darkblue;
+    transition: color 0.5s ease;
+}
+ul#social li a:hover {
+    color: $white;
 }
 footer .copyright {
     font-size: 12px;
