@@ -1,7 +1,7 @@
 # Site settings
-title: eudes.co
+title: "Adrien Eudes • French, Engineer, Entrepreneur"
 email: adrien@eudes.co
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Hi, I'm Adrien Eudes. I'm a French Engineer & Entrepreneur, I currently live in Singapore. My passions: Maths, Data Science & Innovations. My mission: solving complexe problems with elegant methods using Science & Technology."
 baseurl: ""
 url: "http://www.eudes.co"
 twitter_username: a_eud
