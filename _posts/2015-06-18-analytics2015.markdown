@@ -7,4 +7,6 @@ author: ae
 permalink: analytics2015
 ---
 
-{{ oembed http://www.slideshare.net/aeudes/analytics2015-presentation }}
+You can find my presentation [here][presentation-url]
+
+[presentation-url]: http://www.slideshare.net/aeudes/analytics2015-presentation
