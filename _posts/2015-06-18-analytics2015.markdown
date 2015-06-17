@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Analytics 2015"
+date:   2015-06-18
+categories: analytics conference
+author: ae
+permalink: analytics2015
+---
+
+{{ oembed http://www.slideshare.net/aeudes/analytics2015-presentation }}
