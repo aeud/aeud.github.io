@@ -1,22 +1,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
-<script src="{{ "/js/typed.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript">
-    $(function(){
-        if (!/eudes\.co|localhost/.test(document.referrer)) {
-            $('#curtain').addClass('start');
-            $('#curtain h1#typed').typed({
-                strings: [$('#curtain h1').first().html()],
-                typeSpeed: 100,
-                callback: function(){
-                    $('#curtain').animate({
-                        'height': '300'
-                    }, 1000).removeClass('start');
-                }
-            });
-        };
-    });
-    $(document).ready(function(){
-        $('.tooltipped').tooltip();
-    });
-</script>
+<script src="https://cdn.rawgit.com/mattboldt/typed.js/master/dist/typed.min.js"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
