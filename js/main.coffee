@@ -1,6 +1,6 @@
 ---
 ---
-if !/eudes\.co|localhost/.test document.referrer
+if !/eudes\.co|localhost|github\.io/.test document.referrer
     $ '#curtain'
     .addClass 'start'
     $ '#curtain h1#typed'
@@ -9,8 +9,8 @@ if !/eudes\.co|localhost/.test document.referrer
             .first()
             .html()]
         typeSpeed: 100
-        callback: -> 
-            $ '#curtain' 
+        callback: ->
+            $ '#curtain'
             .animate height: '300', 1000
             .removeClass 'start'
 $ '.tooltipped'
