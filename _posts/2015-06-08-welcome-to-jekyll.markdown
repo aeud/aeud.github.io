@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to set up Google Analytics on your website"
+description: "With this post you will learn how to configure your website and Google Analytcs, to enable the customer traking. How to track the customer's journey?"
 date:   2015-06-08
 categories: ga analytics tracking gtm google
 author: ae
