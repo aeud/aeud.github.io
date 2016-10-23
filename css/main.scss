@@ -104,6 +104,17 @@ header.page-header {
     font-size: 30px;
     text-align: center;
 }
+.post h2 {
+    font-size: 26px;
+    text-align: center;
+}
+.post h3 {
+    font-size: 23px;
+    text-align: center;
+}
+.post center {
+    position: relative;
+}
 .post p.meta {
     text-align: center;
     font-size: 13px;
@@ -123,6 +134,15 @@ header.page-header {
 }
 .post p img {
     width: 100%;
+}
+.post p img.original {
+    width: inherit;
+    max-width: 100%;
+}
+.post p img.original,
+.post center img.original {
+    width: inherit;
+    max-width: 100%;
 }
 
 .post .signature {
