@@ -85,8 +85,7 @@ default | 123 | Direct | 2016-09-04 22:15:08 | 3 | 1
 
 We have no other choice to integrate our logic in the query everytime, so let's work with this example: we're creating a report to calculate for each day, how much (net revenue) is attributed to each channel, based on 20-40-20 attribution model:
 
-```js
-
+```sql
 SELECT
   MONTH(TIMESTAMP(UTC_USEC_TO_MONTH(o.createdAt))) month,
   j.channel channel,
