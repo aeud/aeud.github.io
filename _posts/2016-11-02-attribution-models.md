@@ -59,7 +59,7 @@ We need, for each order, a list of channels, sequenced, representing the channel
 2. Email
 3. Direct
 
-Guess what, this table is already in BigQuery, and called colors.orders_journey:
+Guess what, this table is already in BigQuery, and called `colors.orders_journey`:
 
 <img src="https://www.dropbox.com/s/zqvope484nnnbg8/Screenshot%202016-11-03%2014.25.16.png?dl=1" alt="BigQuery" style="max-width: 300px;">
 
