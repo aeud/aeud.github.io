@@ -77,8 +77,8 @@ For our example, this is how our tables looks like:
 account | orderId | channel | sessionStartedAt | visitNumber | visitNumberDesc
 --- | --- | --- | --- | --- | ---
 default | 123 | Facebook Ad | 2016-09-01 21:35:43 | 1 | 3
-default | 123 | Facebook Ad | 2016-09-04 14:12:21 | 2 | 2
-default | 123 | Facebook Ad | 2016-09-04 22:15:08 | 3 | 1
+default | 123 | Email | 2016-09-04 14:12:21 | 2 | 2
+default | 123 | Direct | 2016-09-04 22:15:08 | 3 | 1
 
 
 ### Let's build the model
