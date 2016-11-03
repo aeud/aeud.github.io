@@ -24,7 +24,7 @@ Today, using the last click attribution is not conceivable anymore: Facebook and
 
 Google Analytics released few months ago a new feature called Multi Channel Funnel. Their goal is to memorize for each user (GA definition, cookie based), a list of channels they landed on the website by. With this "list of channels", they're able to calculate different attribution models to the different goals, and particularly to the transactions:
 
-![Models](https://www.dropbox.com/s/6lg7s2hcvubva65/Screenshot%202016-11-03%2014.12.29.png?dl=1)
+<img src="https://www.dropbox.com/s/6lg7s2hcvubva65/Screenshot%202016-11-03%2014.12.29.png?dl=1" alt="Models" style="max-width: 300px;">
 
 The propose a list of built-in models, but of course, we can personalize them! The most famous are:
 
@@ -61,7 +61,7 @@ We need, for each order, a list of channels, sequenced, representing the channel
 
 Guess what, this table is already in BigQuery, and called colors.orders_journey:
 
-![BigQuery](https://www.dropbox.com/s/zqvope484nnnbg8/Screenshot%202016-11-03%2014.25.16.png?dl=1)
+<img src="https://www.dropbox.com/s/zqvope484nnnbg8/Screenshot%202016-11-03%2014.25.16.png?dl=1" alt="BigQuery" style="max-width: 300px;">
 
 - Each row represents a session from a customer prepending an order
 - `account`, `orderId` are trivial, and represents the prepended order
