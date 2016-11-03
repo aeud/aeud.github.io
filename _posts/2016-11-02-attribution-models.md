@@ -85,28 +85,4 @@ default | 123 | Direct | 2016-09-04 22:15:08 | 3 | 1
 
 We have no other choice to integrate our logic in the query everytime, so let's work with this example: we're creating a report to calculate for each day, how much (net revenue) is attributed to each channel, based on 20-40-20 attribution model:
 
-```sql
-SELECT
-  MONTH(TIMESTAMP(UTC_USEC_TO_MONTH(o.createdAt))) month,
-  j.channel channel,
-  ROUND(SUM(CASE
-        WHEN j.visitNumber + j.visitNumberDesc = 2 THEN 1
-        WHEN j.visitNumber = 1
-      OR j.visitNumberDesc = 1 THEN 0.4
-        ELSE 0.2 / (j.visitNumber + j.visitNumberDesc - 1)
-      END * o.totals.validNetRevenue), 2) AS net
-FROM
-  [luxola.com:luxola-analytics:colors.orders_journey] j
-LEFT JOIN
-  dwh.orders o
-ON
-  o.account = j.account
-  AND o.orderId = j.orderId
-WHERE
-    o.createdAt >= UTC_USEC_TO_YEAR(CURRENT_DATE())
-GROUP BY
-  1,
-  2
-LIMIT
-  1000
-```
+<script src="https://gist.github.com/aeud/76bab09486e1e557e0ba5ff004d86e18.js"></script>
