@@ -1,5 +1,5 @@
 {
 	"@context": "http://schema.org/",
 	"@type": "Accommodation",
-	"permittedUsage": "test"
+	"permittedUsage": "test_2"
 }
